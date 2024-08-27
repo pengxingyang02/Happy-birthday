@@ -1,11 +1,8 @@
 <!DOCTYPE html>
-
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="HandheldFriendly" content="true">
   <title>Happy Birthday | Mum</title>
@@ -25,11 +22,10 @@
     <div id="card-inside">
       <div class="wrap">
         <center>
-          <p class="animated infinite wobble"><b><u>Happy Birthday Firend!</b></u>
-          </p>
+          <p class="animated infinite wobble"><b><u>Happy Birthday Friend!</u></b></p>
           <center>
             <p> 🎉祝愿宝宝🎉<br>
-🎂生日快乐，青春永驻，笑颜常开🎂<br>
+            🎂生日快乐，青春永驻，笑颜常开🎂<br>
 🎂花开富贵，锦绣年华，心想事成🎂<br>
 🎂星光璀璨，美丽常伴，快乐无边🎂<br>
 🎂岁岁平安，心情愉悦，事事顺意🎂<br>
@@ -41,15 +37,15 @@
 🎂美丽如花，活力四射，喜乐无忧🎂<br>
 🎂青春永驻，光彩照人，风华正茂🎂<br>
 🎂青春无敌，甜美可人，笑容灿烂🎂
-</p>
-            <p class="signed"><u>Made With</b><b> <i class="em-svg em-heart"></i></b><b> By </b> <b>Peng_xy</b></u></p>
+            </p>
+            <p class="signed"><u>Made With <b><i class="em-svg em-heart"></i></b> By <b>Peng_xy</b></u></p>
       </div>
     </div>
     <div id="card-front">
       <div class="wrap">
         <h1 class="animated infinite swing">Happiest Birthday!</h1>
         <div class="cake_and_velas">
-          <div class="velas">
+           <div class="velas">
             <div class="fuego"></div>
             <div class="fuego"></div>
             <div class="fuego"></div>
@@ -62,7 +58,7 @@
       <button id="open" data-balloon="Click to Open Card !" data-balloon-length="medium" data-balloon-pos="left" data-balloon-visible>&gt;</button>
       <button id="close" data-balloon="! bɿɒɔ ɘƨolɔ oɈ ʞɔilƆ" data-balloon-length="medium" data-balloon-pos="left" data-balloon-visible>&lt;</button>
       <div class="card-front_inside">
-        <br> <br> <br>
+         <br> <br> <br>
         <div class="polaroid">
           <div class="img" style="background-image: url('img/bx1.jpg')"></div>
         </div>
@@ -73,12 +69,21 @@
     </div>
   </div>
 
+  <!-- 隐藏的音乐播放 -->
+  
+<audio id="music" src="music/YY.mp3"></audio>
+
+
+  <script src="js/index.js"></script>
+  <script>
+    document.getElementById('open').addEventListener('click', function() {
+        document.getElementById('music').play();
+    });
+
+    document.getElementById('close').addEventListener('click', function() {
+        document.getElementById('music').pause();
+    });
+  </script>
+
 </body>
-
-</html>
-
-<script src="js/index.js"></script>
-
-</body>
-
 </html>
